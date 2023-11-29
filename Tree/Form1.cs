@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
-using System.Runtime.InteropServices;
-using System.Runtime.InteropServices.ComTypes;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 
@@ -51,7 +49,7 @@ namespace Tree
             // Required for Windows Form Designer support
             //
             InitializeComponent();
-            this.Text = "Tree View";
+
             //
             // TODO: Add any constructor code after InitializeComponent call
             //
@@ -84,26 +82,26 @@ namespace Tree
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Node5");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Node8");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Node4", new System.Windows.Forms.TreeNode[] {
-            treeNode34,
-            treeNode35});
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Node6");
-            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Node1", new System.Windows.Forms.TreeNode[] {
-            treeNode36,
-            treeNode37});
-            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Node7");
-            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("Node2", new System.Windows.Forms.TreeNode[] {
-            treeNode39});
-            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("Node3");
-            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("Node0", new System.Windows.Forms.TreeNode[] {
-            treeNode38,
-            treeNode40,
-            treeNode41});
-            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("Node10");
-            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("Node9", new System.Windows.Forms.TreeNode[] {
-            treeNode43});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Node5");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Node8");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Node4", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2});
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Node6");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Node1", new System.Windows.Forms.TreeNode[] {
+            treeNode3,
+            treeNode4});
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Node7");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Node2", new System.Windows.Forms.TreeNode[] {
+            treeNode6});
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Node3");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Node0", new System.Windows.Forms.TreeNode[] {
+            treeNode5,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Node10");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Node9", new System.Windows.Forms.TreeNode[] {
+            treeNode10});
             this.tv = new System.Windows.Forms.TreeView();
             this.AddBtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -137,32 +135,32 @@ namespace Tree
             this.tv.HideSelection = false;
             this.tv.Location = new System.Drawing.Point(77, 12);
             this.tv.Name = "tv";
-            treeNode34.Name = "";
-            treeNode34.Text = "Node5";
-            treeNode35.Name = "";
-            treeNode35.Text = "Node8";
-            treeNode36.Name = "";
-            treeNode36.Text = "Node4";
-            treeNode37.Name = "";
-            treeNode37.Text = "Node6";
-            treeNode38.Name = "";
-            treeNode38.Text = "Node1";
-            treeNode39.Name = "";
-            treeNode39.Text = "Node7";
-            treeNode40.Name = "";
-            treeNode40.Text = "Node2";
-            treeNode41.Name = "";
-            treeNode41.Text = "Node3";
-            treeNode42.Name = "";
-            treeNode42.Text = "Node0";
-            treeNode43.Name = "";
-            treeNode43.Text = "Node10";
-            treeNode44.Name = "";
-            treeNode44.Text = "Node9";
+            treeNode1.Name = "";
+            treeNode1.Text = "Node5";
+            treeNode2.Name = "";
+            treeNode2.Text = "Node8";
+            treeNode3.Name = "";
+            treeNode3.Text = "Node4";
+            treeNode4.Name = "";
+            treeNode4.Text = "Node6";
+            treeNode5.Name = "";
+            treeNode5.Text = "Node1";
+            treeNode6.Name = "";
+            treeNode6.Text = "Node7";
+            treeNode7.Name = "";
+            treeNode7.Text = "Node2";
+            treeNode8.Name = "";
+            treeNode8.Text = "Node3";
+            treeNode9.Name = "";
+            treeNode9.Text = "Node0";
+            treeNode10.Name = "";
+            treeNode10.Text = "Node10";
+            treeNode11.Name = "";
+            treeNode11.Text = "Node9";
             this.tv.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode42,
-            treeNode44});
-            this.tv.Size = new System.Drawing.Size(647, 424);
+            treeNode9,
+            treeNode11});
+            this.tv.Size = new System.Drawing.Size(710, 424);
             this.tv.TabIndex = 0;
             // 
             // AddBtn
@@ -357,7 +355,7 @@ namespace Tree
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
-            this.ClientSize = new System.Drawing.Size(800, 620);
+            this.ClientSize = new System.Drawing.Size(850, 620);
             this.Controls.Add(this.CollapseAllBtn);
             this.Controls.Add(this.ExpandAllBtn);
             this.Controls.Add(this.DelBtn);
@@ -366,7 +364,7 @@ namespace Tree
             this.Controls.Add(this.tv);
             this.Menu = this.mainMenu1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Tree View";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -545,61 +543,37 @@ namespace Tree
         }
 
 
+
         private void SaveMI_Click(object sender, EventArgs e)
         {
-            //Stream st;
-            //BinaryFormatter binfmt;
+            BinaryFormatter bf = new BinaryFormatter();
+            TreeNode[] nodeList = new TreeNode[tv.Nodes.Count];
+            tv.Nodes.CopyTo(nodeList, 0);
 
-            //if (saveFileDialog1.ShowDialog() == DialogResult.OK)
-            //{
-            //    if ((st = saveFileDialog1.OpenFile()) != null)
-            //    {
-            //        // Save to disk
-            //        binfmt = new BinaryFormatter();
-            //        binfmt.Serialize(st, tv);
-            //        st.Close();
-            //        MessageBox.Show("Saved");
-            //    }
-            //}
-
-            string filename = "../../states/state1";
-
-            using (Stream file = File.Open(filename, FileMode.Create))
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                BinaryFormatter bf = new BinaryFormatter();
-                TreeNode[] nodeList = new TreeNode[tv.Nodes.Count];
-                tv.Nodes.CopyTo(nodeList, 0);
-                bf.Serialize(file, nodeList);
-            }
+                using (Stream file = File.Open(saveFileDialog1.FileName, FileMode.Create))
+                {
+                    bf.Serialize(file, nodeList);
+                }
+            }        
         }
 
 
 
         private void OpenMI_Click(object sender, EventArgs e)
         {
-            //Stream st;
-            //BinaryFormatter binfmt;
-
-            //if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            //{
-            //    if ((st = openFileDialog1.OpenFile()) != null)
-            //    {
-            //        binfmt = new BinaryFormatter();
-            //        tv = (TreeView)binfmt.Deserialize(st);
-            //        st.Close();
-            //    }
-            //}
-
             tv.Nodes.Clear();
 
-            string filename = "../../states/state1";
-
-            using (Stream file = File.Open(filename, FileMode.Open))
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                BinaryFormatter bf = new BinaryFormatter();
-                object obj = bf.Deserialize(file);
-                TreeNode[] nodeList = ((TreeNode[])(obj as IEnumerable<TreeNode>));
-                tv.Nodes.AddRange(nodeList);
+                using (Stream file = File.Open(openFileDialog1.FileName, FileMode.Open))
+                {
+                    BinaryFormatter bf = new BinaryFormatter();
+                    object obj = bf.Deserialize(file);
+                    TreeNode[] nodeList = ((TreeNode[])(obj as IEnumerable<TreeNode>));
+                    tv.Nodes.AddRange(nodeList);
+                }
             }
         }
     }
