@@ -550,6 +550,7 @@ namespace Tree
             TreeNode[] nodeList = new TreeNode[tv.Nodes.Count];
             tv.Nodes.CopyTo(nodeList, 0);
 
+            saveFileDialog1.InitialDirectory = Path.GetDirectoryName(Application.StartupPath + "\\states\\");
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 using (Stream file = File.Open(saveFileDialog1.FileName, FileMode.Create))
@@ -565,6 +566,7 @@ namespace Tree
         {
             tv.Nodes.Clear();
 
+            openFileDialog1.InitialDirectory = Path.GetDirectoryName(Application.StartupPath + "\\states\\");
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 using (Stream file = File.Open(openFileDialog1.FileName, FileMode.Open))
